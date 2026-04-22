@@ -34,8 +34,8 @@ ai_front_management_stop = {
 		priority = 1000
 		ordertype = front
 		execution_type = careful
-		execute_order = yes
-		manual_attack = yes
+		execute_order = no
+		manual_attack = no
 	}
 }
 
