@@ -149,8 +149,6 @@ ai_front_management_rush_failing = {
 		priority = 800
 		ordertype = front
 		execution_type = rush
-		execute_order = yes
-		manual_attack = yes
 	}
 }
 
@@ -179,8 +177,6 @@ ai_front_management_careful_failing = {
 		priority = 800
 		ordertype = front
 		execution_type = careful
-		execute_order = yes
-		manual_attack = yes
 	}
 }
 
@@ -207,8 +203,6 @@ ai_front_management_rush = {
 		priority = 200
 		ordertype = front
 		execution_type = rush
-		execute_order = yes
-		manual_attack = yes
 	}
 }
 
@@ -237,8 +231,6 @@ ai_front_management_careful = {
 		priority = 200
 		ordertype = front
 		execution_type = careful
-		execute_order = yes
-		manual_attack = yes
 	}
 }
 
@@ -266,8 +258,6 @@ ai_front_management_rush_vs_minors = {
 		priority = 150
 		ordertype = front
 		execution_type = rush
-		execute_order = yes
-		manual_attack = yes
 	}
 }
 
@@ -296,8 +286,6 @@ ai_front_management_careful_vs_minors = {
 		priority = 150
 		ordertype = front
 		execution_type = careful
-		execute_order = yes
-		manual_attack = yes
 	}
 }
 
@@ -326,8 +314,6 @@ ai_front_management_default_rush = {
 		priority = 50
 		ordertype = front
 		execution_type = rush
-		execute_order = yes
-		manual_attack = yes
 	}
 }
 
@@ -358,8 +344,6 @@ ai_front_management_default_balanced = {
 		priority = 50
 		ordertype = front
 		execution_type = balanced
-		execute_order = yes
-		manual_attack = yes
 	}
 }
 
