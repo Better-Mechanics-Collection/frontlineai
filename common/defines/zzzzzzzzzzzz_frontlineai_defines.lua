@@ -835,7 +835,7 @@ NDefines.NAI.DIVISION_MATCH_ROLE_BOOST_FACTOR = 1.5    -- vanilla 1.2 | stronger
  -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
  -- FORT AVOIDANCE
  -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-NDefines.NAI.ATTACK_HEAVILY_DEFENDED_LIMIT = 1.75
+--NDefines.NAI.ATTACK_HEAVILY_DEFENDED_LIMIT = 1.75
 NDefines.NAI.PLAN_VALUE_FORTIFICATION_LEVEL_MAX_PENALTY = -0.6
 NDefines.NAI.FORT_LEVEL_TO_CONSIDER_HIGHLY_FORTIFIED = 1
 NDefines.NMilitary.PLAN_NEIGHBORING_ENEMY_PROVINCE_FACTOR = 1.2  -- vanilla 0.7 | AI scores provinces with more enemy neighbors higher = naturally targets salient tips and flanks rather than thick frontlines
