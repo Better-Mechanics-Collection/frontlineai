@@ -19,17 +19,26 @@ has_red_air = {
 }
 
 has_manpower_and_equipment_surplus = {
-	has_manpower > 200000
-	has_equipment = { infantry_equipment > 10000 }
-	has_equipment = { support_equipment > 500 }
-	has_equipment = { artillery_equipment > 500 }
+	manpower_per_military_factory > 1000
+	stockpile_ratio = { archetype = infantry_equipment ratio > 0.20 }
+	stockpile_ratio = { archetype = support_equipment ratio > 0.20 }
+	stockpile_ratio = { archetype = artillery_equipment ratio > 0.20 }
 }
 
-has_manpower_and_equipment_shortage = {
+has_manpower_or_equipment_shortage = {
 	OR = {
-		has_manpower < 100000
-		has_equipment = { infantry_equipment < -20000 }
-		has_equipment = { support_equipment < -1000 }
-		has_equipment = { artillery_equipment < -1000 }
+		manpower_per_military_factory < 500
+		stockpile_ratio = { archetype = infantry_equipment ratio < 0.01 }
+		stockpile_ratio = { archetype = support_equipment ratio < 0.01 }
+		stockpile_ratio = { archetype = artillery_equipment ratio < 0.01 }
+	}
+}
+
+has_an_actual_civil_war = {
+	has_civil_war = yes
+	NOT = {
+		any_enemy_country = {
+			has_civil_war = no
+		}
 	}
 }
