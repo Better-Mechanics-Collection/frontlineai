@@ -35,7 +35,7 @@ ai_we_winning_big_time = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush
+		execution_type = rush_weak
 	}
 
 	ai_strategy = {
@@ -47,7 +47,7 @@ ai_we_winning_big_time = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush_weak
+		execution_type = balanced
 	}
 
 	ai_strategy = {
@@ -59,7 +59,7 @@ ai_we_winning_big_time = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = balanced
+		execution_type = careful
 	}
 
 	ai_strategy = {
@@ -70,7 +70,9 @@ ai_we_winning_big_time = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = careful
+		execution_type = rush_weak
+		execute_order = no
+		manual_attack = yes
 	}
 }
 
@@ -100,7 +102,7 @@ ai_we_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush
+		execution_type = rush_weak
 	}
 
 	ai_strategy = {
@@ -112,7 +114,7 @@ ai_we_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush_weak
+		execution_type = balanced
 	}
 
 	ai_strategy = {
@@ -124,7 +126,7 @@ ai_we_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = balanced
+		execution_type = careful
 	}
 
 	ai_strategy = {
@@ -136,7 +138,9 @@ ai_we_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = careful
+		execution_type = rush_weak
+		execute_order = no
+		manual_attack = yes
 	}
 
 	ai_strategy = {
@@ -147,7 +151,7 @@ ai_we_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush
+		execution_type = balanced
 		execute_order = no
 		manual_attack = yes
 	}
@@ -171,7 +175,7 @@ ai_we_kinda_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush
+		execution_type = rush_weak
 	}
 
 	ai_strategy = {
@@ -183,7 +187,7 @@ ai_we_kinda_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush_weak
+		execution_type = balanced
 	}
 
 	ai_strategy = {
@@ -195,7 +199,7 @@ ai_we_kinda_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = balanced
+		execution_type = careful
 	}
 
 	ai_strategy = {
@@ -207,7 +211,9 @@ ai_we_kinda_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = careful
+		execution_type = rush_weak
+		execute_order = no
+		manual_attack = yes
 	}
 
 	ai_strategy = {
@@ -219,7 +225,7 @@ ai_we_kinda_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush
+		execution_type = balanced
 		execute_order = no
 		manual_attack = yes
 	}
@@ -232,7 +238,7 @@ ai_we_kinda_winning = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush_weak
+		execution_type = careful
 		execute_order = no
 		manual_attack = yes
 	}
@@ -255,7 +261,7 @@ ai_we_stalemating = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush
+		execution_type = rush_weak
 	}
 
 	ai_strategy = {
@@ -267,7 +273,7 @@ ai_we_stalemating = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush_weak
+		execution_type = balanced
 	}
 
 	ai_strategy = {
@@ -279,7 +285,7 @@ ai_we_stalemating = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = balanced
+		execution_type = careful
 	}
 
 	ai_strategy = {
@@ -291,7 +297,9 @@ ai_we_stalemating = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = careful
+		execution_type = rush_weak
+		execute_order = no
+		manual_attack = yes
 	}
 
 	ai_strategy = {
@@ -303,7 +311,7 @@ ai_we_stalemating = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush
+		execution_type = balanced
 		execute_order = no
 		manual_attack = yes
 	}
@@ -317,7 +325,7 @@ ai_we_stalemating = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush_weak
+		execution_type = careful
 		execute_order = no
 		manual_attack = yes
 	}
@@ -330,7 +338,7 @@ ai_we_stalemating = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = balanced
+		execution_type = careful
 		execute_order = no
 		manual_attack = no
 	}
@@ -365,7 +373,7 @@ ai_we_kinda_losing = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush
+		execution_type = rush_weak
 	}
 
 	ai_strategy = {
@@ -377,7 +385,7 @@ ai_we_kinda_losing = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush_weak
+		execution_type = balanced
 	}
 
 	ai_strategy = {
@@ -389,7 +397,7 @@ ai_we_kinda_losing = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = balanced
+		execution_type = careful
 	}
 
 	ai_strategy = {
@@ -398,18 +406,6 @@ ai_we_kinda_losing = {
 			has_war_with = FROM
 			strength_ratio = { tag = FROM ratio > 1.1 }
 			strength_ratio = { tag = FROM ratio < 1.4 }
-		}
-		priority = 1000
-		ordertype = front
-		execution_type = careful
-	}
-
-	ai_strategy = {
-		type = front_control
-		country_trigger = {
-			has_war_with = FROM
-			strength_ratio = { tag = FROM ratio > 1.4 }
-			strength_ratio = { tag = FROM ratio < 1.7 }
 		}
 		priority = 1000
 		ordertype = front
@@ -422,13 +418,27 @@ ai_we_kinda_losing = {
 		type = front_control
 		country_trigger = {
 			has_war_with = FROM
-			strength_ratio = { tag = FROM ratio > 1.7 }
+			strength_ratio = { tag = FROM ratio > 1.4 }
+			strength_ratio = { tag = FROM ratio < 1.7 }
 		}
 		priority = 1000
 		ordertype = front
 		execution_type = balanced
 		execute_order = no
-		manual_attack = no
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		country_trigger = {
+			has_war_with = FROM
+			strength_ratio = { tag = FROM ratio > 1.7 }
+		}
+		priority = 1000
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = yes
 	}
 }
 
@@ -495,7 +505,7 @@ ai_we_losing = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = balanced
+		execution_type = rush_weak
 		execute_order = no
 		manual_attack = yes
 	}
@@ -508,9 +518,9 @@ ai_we_losing = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = careful
+		execution_type = balanced
 		execute_order = no
-		manual_attack = no
+		manual_attack = yes
 	}
 }
 
@@ -594,7 +604,7 @@ ai_we_civil_warring = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush
+		execution_type = rush_weak
 	}
 
 	ai_strategy = {
@@ -606,7 +616,7 @@ ai_we_civil_warring = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = rush_weak
+		execution_type = balanced
 	}
 
 	ai_strategy = {
@@ -618,7 +628,7 @@ ai_we_civil_warring = {
 		}
 		priority = 1000
 		ordertype = front
-		execution_type = balanced
+		execution_type = careful
 	}
 
 	ai_strategy = {
@@ -627,18 +637,6 @@ ai_we_civil_warring = {
 			has_war_with = FROM
 			strength_ratio = { tag = FROM ratio > 1.4 }
 			strength_ratio = { tag = FROM ratio < 1.7 }
-		}
-		priority = 1000
-		ordertype = front
-		execution_type = careful
-	}
-
-	ai_strategy = {
-		type = front_control
-		country_trigger = {
-			has_war_with = FROM
-			strength_ratio = { tag = FROM ratio > 1.7 }
-			strength_ratio = { tag = FROM ratio < 2.0 }
 		}
 		priority = 1000
 		ordertype = front
@@ -651,11 +649,25 @@ ai_we_civil_warring = {
 		type = front_control
 		country_trigger = {
 			has_war_with = FROM
-			strength_ratio = { tag = FROM ratio > 2.0 }
+			strength_ratio = { tag = FROM ratio > 1.7 }
+			strength_ratio = { tag = FROM ratio < 2.0 }
 		}
 		priority = 1000
 		ordertype = front
 		execution_type = balanced
+		execute_order = no
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		country_trigger = {
+			has_war_with = FROM
+			strength_ratio = { tag = FROM ratio > 2.0 }
+		}
+		priority = 1000
+		ordertype = front
+		execution_type = careful
 		execute_order = no
 		manual_attack = yes
 	}
@@ -839,7 +851,7 @@ end_pocket = {
 			}
 		}
 		ratio = 0.0
-		priority = 5000
+		priority = 9000
 		ordertype = front
 		execution_type = rush
 		execute_order = yes
@@ -979,7 +991,7 @@ forced_check_omega_lul = {
 	}
 }
 
-this_state_is_empty = {
+FAI_empty_enemy_front_state_rush = {
 	enable = {
 		has_war = yes
 	}
@@ -989,8 +1001,11 @@ this_state_is_empty = {
 	ai_strategy = {
 		type = front_control
 		state_trigger = {
+			is_controlled_by = FROM
+			any_neighbor_state = {
+				is_controlled_by = FROM.FROM
+			}
 			controller = {
-				tag = FROM
 				divisions_in_state = {
 					state = PREV
 					size < 1
@@ -1003,5 +1018,70 @@ this_state_is_empty = {
 		execution_type = rush
 		execute_order = yes
 		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = {
+			is_controlled_by = FROM
+			any_neighbor_state = {
+				is_controlled_by = FROM.FROM
+			}
+			controller = {
+				divisions_in_state = {
+					state = PREV
+					size < 1
+				}
+			}
+		}
+		value = 100
+	}
+}
+
+FAI_thin_enemy_front_gap_push = {
+	enable = {
+		has_war = yes
+		FAI_no_crisis_hold = yes
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			is_controlled_by = FROM
+			any_neighbor_state = {
+				is_controlled_by = FROM.FROM
+			}
+			controller = {
+				divisions_in_state = {
+					state = PREV
+					size < 2
+				}
+			}
+		}
+		ratio = 0.0
+		priority = 6500
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		state_trigger = {
+			is_controlled_by = FROM
+			any_neighbor_state = {
+				is_controlled_by = FROM.FROM
+			}
+			controller = {
+				divisions_in_state = {
+					state = PREV
+					size < 2
+				}
+			}
+		}
+		value = 40
 	}
 }

@@ -20,17 +20,17 @@ has_red_air = {
 
 has_manpower_and_equipment_surplus = {
 	manpower_per_military_factory > 1000
-	stockpile_ratio = { archetype = infantry_equipment ratio > 0.20 }
-	stockpile_ratio = { archetype = support_equipment ratio > 0.20 }
-	stockpile_ratio = { archetype = artillery_equipment ratio > 0.20 }
+	check_variable = { FAI_fielded_eq_ratio > 0.90 }
+	NOT = { has_country_flag = FAI_eq_crisis }
+	NOT = { has_country_flag = FAI_manpower_crisis }
 }
 
 has_manpower_or_equipment_shortage = {
 	OR = {
+		has_country_flag = FAI_eq_crisis
+		has_country_flag = FAI_manpower_crisis
 		manpower_per_military_factory < 500
-		stockpile_ratio = { archetype = infantry_equipment ratio < 0.01 }
-		stockpile_ratio = { archetype = support_equipment ratio < 0.01 }
-		stockpile_ratio = { archetype = artillery_equipment ratio < 0.01 }
+		check_variable = { FAI_fielded_eq_ratio < 0.70 }
 	}
 }
 
@@ -41,4 +41,38 @@ has_an_actual_civil_war = {
 			has_civil_war = no
 		}
 	}
+}
+
+FAI_mobile_doctrine = {
+	has_doctrine = new_mobile_warfare
+}
+
+FAI_superior_firepower_doctrine = {
+	has_doctrine = superior_firepower
+}
+
+FAI_grand_battleplan_doctrine = {
+	has_doctrine = grand_battleplan
+}
+
+FAI_mass_assault_doctrine = {
+	has_doctrine = mass_assault
+}
+
+FAI_known_vanilla_grand_doctrine = {
+	OR = {
+		FAI_mobile_doctrine = yes
+		FAI_superior_firepower_doctrine = yes
+		FAI_grand_battleplan_doctrine = yes
+		FAI_mass_assault_doctrine = yes
+	}
+}
+
+FAI_unknown_or_modded_doctrine = {
+	NOT = { FAI_known_vanilla_grand_doctrine = yes }
+}
+
+FAI_no_crisis_hold = {
+	NOT = { has_country_flag = FAI_eq_crisis }
+	NOT = { has_country_flag = FAI_manpower_crisis }
 }
