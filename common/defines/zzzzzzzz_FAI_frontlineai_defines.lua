@@ -723,11 +723,11 @@ NDefines.NAI.LAND_COMBAT_MIN_EXCORT_PLANES = 100  -- vanilla 80 | Min amount of 
 NDefines.NAI.LAND_COMBAT_CAS_PLANES_PER_ENEMY_ARMY_LIMIT = 300  -- vanilla 200 | Limit of CAS planes requested by enemy armies | [FAI]
 
  -- Ground support regional importance scores
-NDefines.NAI.LAND_COMBAT_AIR_SUPERIORITY_IMPORTANCE = -0.1  -- vanilla 0.40 | Strategic importance of air superiority ( amount of enemy planes in area ) | [BIC]
-NDefines.NAI.LAND_COMBAT_OUR_ARMIES_AIR_IMPORTANCE = 25  -- vanilla 20 | Strategic importance of our armies | [BIC]
-NDefines.NAI.LAND_COMBAT_OUR_COMBATS_AIR_IMPORTANCE = 90  -- vanilla 155 | Strategic importance of our armies in the combats | [BIC]
+NDefines.NAI.LAND_COMBAT_AIR_SUPERIORITY_IMPORTANCE = 0.4  -- vanilla 0.40 | Strategic importance of air superiority ( amount of enemy planes in area ) | [BIC]
+NDefines.NAI.LAND_COMBAT_OUR_ARMIES_AIR_IMPORTANCE = 20  -- vanilla 20 | Strategic importance of our armies | [BIC]
+NDefines.NAI.LAND_COMBAT_OUR_COMBATS_AIR_IMPORTANCE = 160  -- vanilla 155 | Strategic importance of our armies in the combats | [BIC]
 NDefines.NAI.LAND_COMBAT_FRIEND_ARMIES_AIR_IMPORTANCE = 10  -- vanilla 10 | Strategic importance of friendly armies | [BIC]
-NDefines.NAI.LAND_COMBAT_FRIEND_COMBATS_AIR_IMPORTANCE = 25  -- vanilla 8 | Strategic importance of friendly armies in the combat | [BIC]
+NDefines.NAI.LAND_COMBAT_FRIEND_COMBATS_AIR_IMPORTANCE = 15  -- vanilla 8 | Strategic importance of friendly armies in the combat | [BIC]
 NDefines.NAI.LAND_COMBAT_ENEMY_ARMIES_AIR_IMPORTANCE = 20  -- vanilla 12 | Strategic importance of our armies | [BIC]
 NDefines.NAI.LAND_COMBAT_ENEMY_LAND_FORTS_AIR_IMPORTANCE = 2  -- vanilla 5 | Strategic importance of enemy land forts in the region | [BIC]
 NDefines.NAI.LAND_COMBAT_ENEMY_COASTAL_FORTS_AIR_IMPORTANCE = 1  -- vanilla 3 | Strategic importance of enemy coastal fronts in the region | [BIC]
