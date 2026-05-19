@@ -247,12 +247,18 @@ FAI_manpower_crisis_update = {
 }
 
 ############################################
+# Monthly update entry point - called from on_monthly
+############################################
+FAI_monthly_air_update = {
+	FAI_track_fighter_losses = yes
+	FAI_save_airforce_check = yes
+}
+
+############################################
 # Weekly update entry point - called from on_weekly
 ############################################
 FAI_weekly_air_update = {
 	FAI_green_air_update = yes
-	FAI_track_fighter_losses = yes
-	FAI_save_airforce_check = yes
 	FAI_equipment_ratio_update = yes
 	FAI_manpower_crisis_update = yes
 }

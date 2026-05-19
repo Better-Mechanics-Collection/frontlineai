@@ -106,6 +106,7 @@ on_actions = {
 			if = {
 				limit = { is_ai = yes }
 				FAI_weekly_air_update = yes
+				FAI_monthly_air_update = yes
 			}
 		}
 	}
