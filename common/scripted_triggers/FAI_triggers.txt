@@ -1,21 +1,9 @@
 has_green_air = {
-	NOT = {
-		any_enemy_country = {
-			has_deployed_air_force_size = {
-				size > ROOT.num_deployed_planes_with_type@small_plane_airframe
-				type = fighter
-			}
-		}
-	}
+	has_country_flag = FAI_green_air
 }
 
 has_red_air = {
-	any_enemy_country = {
-		has_deployed_air_force_size = {
-			size > ROOT.num_deployed_planes_with_type@small_plane_airframe
-			type = fighter
-		}
-	}
+	NOT = { has_country_flag = FAI_green_air }
 }
 
 has_manpower_and_equipment_surplus = {
